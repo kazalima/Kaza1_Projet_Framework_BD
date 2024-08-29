@@ -1,0 +1,77 @@
+DELETE kaza_1
+
+PUT /_index_template/template_kaza_1
+{
+  "index_patterns": ["kaza_1*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 3,
+      "number_of_replicas": 2
+    },
+    "mappings": {
+      "properties": {
+        "agent_timestamp": {
+          "type": "date",
+          "format": "yyyy-MM-dd_HHmmss||strict_date_time||strict_date_optional_time||epoch_millis||strict_date_optional_time_nanos"
+        },
+        "distance": {
+          "type": "float"
+        },
+        "confor": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "locationClient": {
+          "type": "geo_point"
+        },
+        "locationDriver": {
+          "type": "geo_point"
+        },
+        "nomDriver": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nomclient": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "prix_travel": {
+          "type": "float"
+        },
+        "telephoneClient": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "telephoneDriver": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  }
+}
