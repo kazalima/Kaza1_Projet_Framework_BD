@@ -5,7 +5,7 @@ import json
 
 # Configuration du producteur Kafka
 producer = KafkaProducer(
-    bootstrap_servers='kfakasda.eastus.cloudapp.azure.com:9092',
+    bootstrap_servers='broker',
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
