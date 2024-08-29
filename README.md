@@ -6,13 +6,13 @@ Omar Kande N°:23020700009
 
 Vous trouver ici tous les codes et informations que vous aurez besoin
 
-Veillez respecter l'achitecture de code sous IntelliJ comme l'indique l'image
+Veillez respecter l'achitecture de code sous IntelliJ comme l'indique l'image1
 
-Veillez declarer le process dans les ressources 
+Veillez declarer le process dans les ressources comme l'indique image2
 
 index: kaza_1
 
-index_patern sur kibana/elasticsearch:kaza
+index_patern sur kibana/elasticsearch :kaza
 
 Dashboard : Dash1_projet_kaza
 
