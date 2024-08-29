@@ -1,4 +1,7 @@
-Realiser par Khalidou Sognane et Omar Kande
+Realiser par:
+Khalidou Sognane N°:23020700005 
+Omar Kande N°:23020700009
+
 Vous trouver ici tous les codes et informations que vous aurez besoin
 
 Veillez respecter l'achitecture de code sous IntelliJ comme l'indique l'image
